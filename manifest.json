@@ -1,0 +1,17 @@
+{
+    "manifest_version": 2,
+    "name": "Magic Reader",
+    "description": "Chrome Extension that reads text from photographs",
+    "version": "1.0.0",
+    "icons": {"128": "images/logo_dark.png"},
+    "browser_action": {
+        "default_icon": "images/logo_dark.png",
+        "default_popup": "popup.html"
+    },
+    "web_accessible_resources": [
+        "javascript/worker.min.js",
+        "javascript/tesseract-core.wasm.js",
+        "traineddata/eng.traineddata"
+    ],
+    "permissions": ["activeTab"]
+}

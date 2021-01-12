@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang = "en">
+
+    <head>
+        <title>Magic Reader</title>
+        <meta charset = "UTF-8">
+        <meta name = "viewport" content = "width = device-width, initial-scale = 1.0">
+        <meta http-equiv = "X-UA-Compatible" content="ie=edge">
+        <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet"/>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" >
+        <link href = "styles.css" rel = "stylesheet"/>
+        <script src="javascript/jquery-3.5.1.min.js"></script>
+        <script src="javascript/tesseract.min.js"></script>
+    </head>
+    <body >
+        <div class = "head">
+            <img src="images/header.png" alt="Magic Reader" id = "header">
+        </div> 
+        <div class = "content">
+            <div class = "upload-to-result">
+                <input type="file" id="uploader" hidden>
+                <label for="uploader"> Select Photo</label>
+                <p id = "or">or</p>
+                <p id = "your-text">Your Text:</p>
+                <div class = "hide" id = "loader"></div>
+                <p id="result"></p> 
+                <button class = "hide" id = "copy">Copy Text</button>
+                <button class = "hide" id = "pdf">Save Text as PDF</button>
+                <script src="javascript/main.js"></script>
+            </div>
+            <div class = "source-link">
+                <a href = "https://github.com/naptha/tesseract.js?files=1" target = "_blank">
+                <i class = "fa fa-github"> Check out the source code on GitHub!</i>
+                </a>
+            </div>
+        </div>
+    </body>
+</html>
